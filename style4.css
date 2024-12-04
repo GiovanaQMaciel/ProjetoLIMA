@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px 0 5px;
+}
+
+.logo img {
+  height: 80px;
+  width: 144px;
+}
+
+header {
+  background-color: hsl(192, 74%, 33%);
+  padding: 5px 10px;
+  position: fixed;
+  z-index: 1;
+  width: 100;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #000280;
+  width: 100%;
+}
+main {
+  margin-top: 0%;
+  padding: auto;
+}
+.introducao {
+  display: flex;
+  justify-content: center;
+  font-size: 250%;
+  color: hsl(192, 74%, 33%);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 700;
+  align-items: center;
+}
+
+.lista img {
+  align-items: center;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.lista p {
+  text-align: center;
+}
+
+/* .comida {
+  width: 200px;
+  height: auto;
+} */
+
+/* .comida1 {
+  padding-left: 3%;
+  width: 40%;
+  height: 52%;
+}
+
+.comida2 {
+  padding-left: 3%;
+  width: 45%;
+  height: 54%;
+}
+
+.comida3 {
+  padding-left: 3%;
+  width: 45%;
+  height: 54%;
+} */
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  padding-left: 30px;
+}
+
+img {
+  /* padding-left: 30px; */
+  width: 600px;
+  height: auto;
+}
+
+.IMC {
+  padding-left: 30px;
+}
+
+.tabela {
+  display: flex;
+  margin-bottom: 50px;
+  padding-left: 30px;
+}
+
+.calculo {
+  width: 52%;
+  height: 30%;
+}
+
+.obeso {
+  display: flex;
+  padding-left: 40px;
+}
+
+.text {
+  padding-left: 30px;
+}
+
+.listaa {
+  padding-left: 50px;
+}
+
+.listaa2 {
+  padding-left: 70px;
+}
+
+.tabela1 {
+  padding-left: 70px;
+  margin-top: 60px;
+  width: 90%;
+  height: auto;
+}
+
+.frutas {
+  width: 100%;
+}

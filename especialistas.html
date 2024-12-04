@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Especialistas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+              <img src="logo.png" alt="Logo HealthTrack" />
+            </div>
+            <nav>
+              <ul>
+                <li><a href="index1.html">Acesse Aqui</a></li>
+                <li><a href="index.html">Exercícios Físicos</a></li>
+                <li><a href="alimentação.html">Nutrição</a></li>
+                <li><a href="especialistas.html">Consultas</a></li>
+                <li><a href="mapa.html">Contato</a></li>
+                <li><a href="sobreNos.html">Sobre Nós</a></li>
+              </ul>
+            </nav>
+          </div>
+    </header>
+    <main>
+        <img  class="i" src="espec.gif">
+        <h2>Diversidade de Profissionais</h2>
+    <div class="car">
+        <div class="carousel1">
+            <img src="img/ca1 1.png" alt="">
+            <img src="img/car1 2.png" alt="">
+            <img src="img/car 1 3.png" alt="">
+       </div>
+       <div class="carousel2">
+        <img src="img/car2 1.png" alt="">
+        <img src="img/car2 2.png" alt="">
+        <img src="img/car2 3.png" alt="">
+   </div>
+   <div class="carousel3">
+    <img src="img/car3 1.png" alt="">
+    <img src="img/car3 2.png" alt="">
+    <img src="img/car3 3.png" alt="">
+        </div>
+</div>
+        <p>Conte com uma equipe diversificada de profissionais, especializados em diferentes modalidades e necessidades, para oferecer o suporte ideal em cada etapa da sua jornada de saúde e bem-estar.</p>
+
+    <section>
+        <h2>Campos de Atuação</h2>
+        <section class="fotos">
+            <div class="atuacao">
+                <img src="img/psicologa.png">
+                <a href="psicologia.html">Psicologia</a>
+            </div>
+            
+            <div class="atuacao">
+            <img src="img/nutricao.png">
+            <a href="nutricao.html">Nutrição</a>
+            </div>
+        </section>
+        
+         <section class="fotos">
+            <div class="atuacao">
+                <img src="img/cardiologia.png">
+                <a href="cardiologia.html">Cardiologia</a>
+            </div>
+
+            <div class="atuacao">
+                <img src="img/pediatria.png">
+                <a href="pediatria.html">Pediatria</a>
+            </div>
+         </section>
+        
+        <section class="fotos">
+            <div class="atuacao">
+                <img src="img/demartologia.png">
+                <a href="dermatologia.html">Demartologia</a>
+            </div>
+
+            <div class="atuacao">
+            <img src="img/fisioterapia.png">
+            <a href="fisioterapia.html">Fisioterapia</a>
+            </div>            
+        </section>
+    </section>
+    </main>
+
+    <script>
+        // JavaScript para o carrossel automático
+        const images1 = document.querySelectorAll('.carousel1 img');
+        let currentImageIndex1 = 0;
+
+        function changeImage() {
+            images1[currentImageIndex1].classList.remove('active');
+            currentImageIndex1 = (currentImageIndex1 + 1) % images1.length;
+            images1[currentImageIndex1].classList.add('active');
+        }
+
+        setInterval(changeImage, 3000); // Troca a imagem a cada 3 segundos
+    </script>
+
+<script>
+    // JavaScript para o carrossel automático
+    const images2 = document.querySelectorAll('.carousel2 img');
+    let currentImageIndex2 = 0;
+
+    function changeImage() {
+        images2[currentImageIndex2].classList.remove('active');
+        currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+        images2[currentImageIndex2].classList.add('active');
+    }
+
+    setInterval(changeImage, 3000); // Troca a imagem a cada 3 segundos
+</script>
+
+<script>
+    // JavaScript para o carrossel automático
+    const images = document.querySelectorAll('.carousel3 img');
+    let currentImageIndex = 0;
+
+    function changeImage() {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.add('active');
+    }
+
+    setInterval(changeImage, 3000); // Troca a imagem a cada 3 segundos
+</script>
+</body>
+</html>

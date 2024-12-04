@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px 0 5px;
+  }
+  
+  .logo img {
+    height: 80px;
+    width: auto;
+  }
+  
+  header {
+    background-color: hsl(192, 74%, 33%);
+    padding: 5px 10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 30px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #000280;
+    width: 100%;
+  }
+
+
+
+.atuacao {
+    position: relative; /* Necessário para o texto ser posicionado dentro do contêiner */
+        width: 45%; /* A imagem vai ocupar 45% da largura da página */
+        margin: 0 auto; /* Centraliza o contêiner na página */
+  }
+  
+  .atuacao img {
+    width: 100%; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .atuacao a {
+    position: absolute; /* Posiciona o texto dentro do contêiner */
+    top: 85%; /* Ajusta a posição vertical */
+    left: 50%; /* Ajusta a posição horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: gray; /* Cor do texto */
+    font-size: 45px; /* Tamanho do texto */
+    margin: 0; /* Remove margem */
+    background-color:aquamarine;
+    width: 275px;
+    height: 85px;
+    align-content: center;
+    text-align: center;   
+    border-radius: 15px; 
+  }
+
+  .fotos{
+    display: flex;
+    margin: 50px;
+  }
+
+  .atuacao a:hover{
+    color: black;
+    width: 100%;
+  }
+
+  .atuacao a {
+        color: grey;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.5s ease;
+  }
+
+  main{
+    margin-top: 10%;
+  }
+
+  h2 {
+    font-size: 65px;
+    text-align: center;
+  }
+
+  .espec {
+    position: relative; /* Necessário para o texto ser posicionado dentro do contêiner */
+        width: 23%; /* A imagem vai ocupar 45% da largura da página */
+        margin: 0 auto; /* Centraliza o contêiner na página */
+  }
+  
+  .espec img {
+    width: 100%; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .espec a {
+    position: absolute; /* Posiciona o texto dentro do contêiner */
+    top: 60%; /* Ajusta a posição vertical */
+    left: 25%; /* Ajusta a posição horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: grey; /* Cor do texto */
+    text-decoration: none;
+    font-size: 20px; /* Tamanho do texto */
+    margin: 0; /* Remove margem */
+    background-color:aquamarine;
+    width: 140px;
+    height: 45px;
+    align-content: center;
+    text-align: center; 
+    border-radius: 10px;
+    
+  }
+
+  .espec a:hover {
+    color: rebeccapurple;
+  }
+
+  .espec h5 {
+    position: absolute; /* Posiciona o texto dentro do contêiner */
+    top: 85%; /* Ajusta a posição vertical */
+    left: 50%; /* Ajusta a posição horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: black; /* Cor do texto */
+    font-size: 14px; /* Tamanho do texto */
+    margin: 0; /* Remove margem */
+    background-color: rgb(201, 201, 201);
+    align-content: center;
+    text-align: center; 
+    height: 40px;
+    width: 200px;  
+    border-radius: 5px; 
+  }
+
+
+
+
+  .container img {
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+
+}
+
+.carousel1{
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 200px;
+}
+
+.carousel1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel1 img.active{
+    opacity: 1;
+}
+
+.carousel1 img:not(.active){
+    opacity: 0;
+
+}
+
+
+
+.carousel2{
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 200px;
+}
+
+.carousel2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel2 img.active{
+  opacity: 1;
+}
+
+.carousel2 img:not(.active){
+  opacity: 0;
+
+}
+
+
+
+
+.carousel3{
+  /* width: 800px;
+  height: 600px; */
+  overflow: hidden;
+  position: relative;
+  margin-left: 200px;
+}
+
+.carousel3 img{
+  /* width: 200%;
+  height: 100%; */
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel3 img.active{
+  opacity: 1;
+}
+
+.carousel3 img:not(.active){
+  opacity: 0;
+
+}
+
+.car {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+p{
+  text-align: center;
+}
+
+.i{
+  width: 100%;
+}
